@@ -1,0 +1,157 @@
+@import '../../styles/mixins';
+
+.cart-goods {
+    background-color: #fff;
+
+    .promo-list {
+        .list-item {
+            padding-top: 7px;
+            width: 100%;
+            height: 129px;
+
+            .item-checkbox {
+                position: relative;
+                display: inline-block;
+                width: 11.73%;
+                height: 114px;
+                vertical-align: top;
+                text-align: center;
+
+                i {
+                    line-height: 114px;
+                    font-size: 20px;
+                }
+            }
+
+            .item-dec {
+                display: inline-block;
+                width: 88.27%;
+                vertical-align: top;
+                padding-bottom: 14px;
+
+                .pic {
+                    display: inline-block;
+                    width: 31.41993958%;
+                    vertical-align: top;
+
+                    img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+
+                .info {
+                    position: relative;
+                    display: inline-block;
+                    width: 68.58006042%;
+                    height: 114px;
+                    padding: 0 12px;
+                    vertical-align: top;
+                    color: #232628;
+
+                    .title {
+                        font-size: 14px;
+                    }
+
+                    .num {
+                        margin-top: 12px;
+                        height: 24px;
+
+                        span {
+                            font-size: 12px;
+                            vertical-align: top;
+                            color: #232628;
+                            line-height: 24px;
+                        }
+
+                        .setnum {
+                            display: inline-block;
+                            height: 24px;
+                            margin-left: 14px;
+                            background-color: #F7F9FA;
+                            border: 1px solid #E9ECF0;
+
+                            span {
+                                display: inline-block;
+                                width: 24px;
+                                font-size: 12px;
+                                line-height: 22px;
+                                text-align: center;
+                                vertical-align: top;
+                            }
+
+                            .count {
+                                width: 55px;
+                                height: 22px;
+                                line-height: 22px;
+                                background-color: #F7F9FA;
+                                font-size: 12px;
+                                outline: none;
+                                border: none;
+                                text-align: center;
+                                vertical-align: top;
+                            }
+
+                            .cut {
+                                border-right: 1px solid #E9ECF0;
+                            }
+
+                            .add {
+                                border-left: 1px solid #E9ECF0;
+                            }
+                        }
+                    }
+
+                    .price {
+                        position: absolute;
+                        left: 12px;
+                        bottom: 0;
+                        font-size: 14px;
+                        color: #FF734C;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 49px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        border-top: 1px solid rgba(180, 186, 191, 0.5);
+
+        .footer-left {
+            box-sizing: border-box;
+            width: 66.67%;
+            font-size: 14px;
+            padding-left: 16px;
+            line-height: 49px;
+
+            .total {
+                margin-left: 8px;
+                font-weight: 500;
+                color: #FF734C;
+                font-size: 16px;
+            }
+        }
+
+        .footer-right {
+            border: none;
+            outline: none;
+            height: 100%;
+            border-radius: 0;
+            color: #fff;
+            font-size: 16px;
+            width: 33.33%;
+            text-align: center;
+            background-color: #FF734C;
+            padding: 1px 6px;
+        }
+    }
+}

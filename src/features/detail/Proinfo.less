@@ -1,0 +1,62 @@
+@import '../../styles/mixins';
+
+.proinfo {
+    padding: 13px 17px;
+    background: #fff;
+    border-bottom: 1px solid #E9ECF0;
+
+    .proinfo-head{
+      display: flex;
+
+      .proinfo-head-title {
+        font-size: 15px;
+        flex: 1;
+        line-height: 20px;
+
+        .text-orange {
+          color: #FF734C;
+        }
+      }
+
+      .proinfo-head-collect {
+          width: 42px;
+          min-height: 21px;
+          height: 100%;
+          text-align: right;
+
+          .iconfont{
+            font-size: 18px;
+          }
+      }
+    }
+
+    .proinfo-body {
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+
+        .proinfo-body-price {
+            flex: 1;
+            font-size: 0;
+
+            .proinfo-body-price-sjg {
+                font-size: 22px;
+                color: #FF734C;
+                font-weight: 600;
+            }
+
+            .proinfo-body-price-jg {
+                color: #B4BABF;
+                margin-left: 5px;
+                font-size: 15px;
+                margin-right: 17px;
+            }
+        }
+
+        .proinfo-body-sales {
+            width: 8em;
+            font-size: 13px;
+            text-align: right;
+        }
+    }
+}

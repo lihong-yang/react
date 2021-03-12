@@ -1,0 +1,195 @@
+@import '../../styles/mixins';
+
+.order-default-page {
+  background: #E9ECF0;
+  height: 100vh;
+
+  .nav {
+    border: 1px solid #F7F9FA;
+    background: #fff;
+  }
+
+
+  .nav i {
+    display: inline-block;
+    width: 24px;
+    line-height: 24px;
+    background-size: 24px 24px;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    text-align: center;
+
+  }
+
+  .nav p {
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+
+  .info {
+    padding: 0 15px;
+    width: 100%;
+    background: #fff;
+
+    .person {
+      line-height: 66px;
+      font-size: 14px;
+      width: 66px;
+      position: relative;
+    }
+
+    .person::after {
+      position: absolute;
+      content: "";
+      top: 16px;
+      bottom: 16px;
+      right: 8px;
+      background: #E9ECF0;
+      width: 1px;
+    }
+
+    .address {
+      flex: 1;
+      font-size: 16px;
+      line-height: 66px;
+      font-weight: bold;
+
+      i {
+        margin-right: 6px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .detail {
+      line-height: 66px;
+    }
+  }
+
+  .borderbd {
+    height: 4px;
+    width: 100%;
+    background: url(https://img02.hua.com/m/Shopping/20180919/img/m_orderinfo_bd.png);
+    background-size: cover;
+  }
+
+  .option {
+    margin-top: 10px;
+    background: #fff;
+    padding: 0px 16px;
+
+
+    li {
+      line-height: 48px;
+      border-top: 1px solid #F7F9FA;
+
+      div {
+        color: #232628;
+        font-size: 14px;
+      }
+
+      p {
+        text-align: right;
+        padding: 0 10px;
+        flex: 1;
+        color: #757575;
+        font-size: 14px;
+      }
+
+      i {
+        font-size: 12px;
+        color: #757575;
+      }
+
+      input {
+        border: none;
+        flex: 1;
+        padding-left: 15px;
+      }
+    }
+  }
+
+
+  .remark {
+    margin-top: 10px;
+    background: #fff;
+    width: 100%;
+    padding: 0px 15px;
+    line-height: 48px;
+    color: #232628;
+    font-size: 14px;
+
+    i {
+      font-size: 12px;
+      color: #757575;
+
+    }
+  }
+
+  .goodsInfo {
+    margin-top: 10px;
+    padding: 14px 16px;
+    background: #fff;
+    border-bottom: 1px solid #F7F9FA;
+
+    img {
+      margin-right: 20px;
+    }
+
+    div {
+      flex: 1;
+
+      p {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 13px;
+    }
+  }
+
+  .prices {
+    background: #fff;
+    padding: 0 15px;
+    line-height: 48px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #FFF;
+    line-height: 52px;
+    padding-left: 15px;
+
+    .total {
+      span {
+        font-size: 12px;
+        margin-right: 10px;
+        vertical-align: bottom
+      }
+
+      p {
+        font-size: 22px;
+        color: #FE6600;
+        font-weight: 500;
+      }
+    }
+
+    .close {
+      width: 124px;
+      text-align: center;
+      background: #FF734C;
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
